@@ -9,7 +9,7 @@ const OrderBanner = () => {
       className="min-h-[320px] py-[140px]"
       style={{
         background:
-          "url('https://cabin-rental.weblium.site/res/5ce40621b84b1a002410eb9e/5d00b63c032b4e0023acecff?nowebp') 45.31% 26.32% / cover no-repeat, rgb(89, 150, 115);",
+          "url('https://cabin-rental.weblium.site/res/5ce40621b84b1a002410eb9e/5d00b63c032b4e0023acecff?nowebp') 45.31% 26.32% / cover no-repeat, rgb(89, 150, 115)",
       }}
     >
       <Container>

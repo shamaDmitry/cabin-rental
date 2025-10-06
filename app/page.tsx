@@ -1,3 +1,4 @@
+import ActivitiesSection from "@/components/homepage/ActivitiesSection";
 import AdventureSection from "@/components/homepage/AdventureSection";
 import OrderBanner from "@/components/homepage/OrderBanner";
 import RentalSection from "@/components/homepage/RentalSection";
@@ -10,6 +11,8 @@ export default function Home() {
       <AdventureSection />
 
       <RentalSection />
+
+      <ActivitiesSection />
     </>
   );
 }

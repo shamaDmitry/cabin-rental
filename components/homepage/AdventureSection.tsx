@@ -14,7 +14,7 @@ const AdventureSection: FC<AdventureSectionProps> = ({ className }) => {
       className={cn("text-center py-20", className)}
       style={{
         background:
-          "url('https://cabin-rental.weblium.site/res/5ce40621b84b1a002410eb9e/5d00dd1ebd7a91002452e0b6?nowebp') 10.31% 73.54% / cover no-repeat, rgb(243, 243, 242);",
+          "url('https://cabin-rental.weblium.site/res/5ce40621b84b1a002410eb9e/5d00dd1ebd7a91002452e0b6?nowebp') 10.31% 73.54% / cover no-repeat, rgb(243, 243, 242)",
       }}
     >
       <Container className="py-12">
