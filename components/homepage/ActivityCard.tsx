@@ -12,18 +12,18 @@ interface ActivityCardProps {
 
 const ActivityCard: FC<ActivityCardProps> = () => {
   return (
-    <Card>
+    <Card className="p-5">
       <Image
         src="https://cabin-rental.weblium.site/res/weblium/5c8a6770f6c6a2002564fc11_optimized_1384_c1384x938-0x0.webp"
         alt=""
-        width={200}
+        width={1200}
         height={200}
-        className="w-full"
+        className="w-full rounded-xl"
       />
 
-      <Headline as="h4">Horse Riding</Headline>
+      <Headline as="h5">Horse Riding</Headline>
 
-      <div>$4/hour</div>
+      <div className="text-primary font-medium text-xl">$4/hour</div>
 
       <p>
         Take a measured romantic horseback riding tour and enjoy our
