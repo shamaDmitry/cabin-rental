@@ -8,7 +8,7 @@ interface Section {
 
 const Section: FC<Section> = ({ className }) => {
   return (
-    <section className={cn("min-h-[320px] py-[140px]", className)}>
+    <section className={cn("min-h-[320px] py-20", className)}>
       <Headline>Section</Headline>
     </section>
   );

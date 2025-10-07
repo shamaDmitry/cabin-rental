@@ -56,7 +56,7 @@ const RentalSection: FC<RentalSection> = ({ className }) => {
           <Button
             size={"xl"}
             variant="outline"
-            className="rounded-full text-background border-background bg-transparent hover:bg-background hover:text-foreground hover:border-background"
+            className="rounded-full text-background border-background hover:bg-background hover:text-foreground"
           >
             See all cabins
           </Button>
