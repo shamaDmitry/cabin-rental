@@ -9,9 +9,22 @@ interface TestimonialSection {
   className?: string;
 }
 
+// https://cabin-rental.weblium.site/res/5ce40621b84b1a002410eb9e/5d00faf8525dfe002370a5bb?nowebp
+
 const TestimonialSection: FC<TestimonialSection> = ({ className }) => {
   return (
-    <section className={cn("min-h-[320px] py-20 text-center", className)}>
+    <section
+      className={cn("min-h-[320px] py-20 text-center relative", className)}
+    >
+      <div className="absolute size-full left-0 top-0 bg-muted -z-20" />
+
+      <div
+        className="absolute size-full left-0 top-0 -z-10 bg-no-repeat bg-[43%_13%] bg-cover"
+        style={{
+          backgroundImage: `url(https://cabin-rental.weblium.site/res/5ce40621b84b1a002410eb9e/5d00faf8525dfe002370a5bb?nowebp)`,
+        }}
+      />
+
       <Container>
         <Headline>Testimonials</Headline>
 

@@ -5,6 +5,7 @@ import CtaSection from "@/components/homepage/CtaSection";
 import FacilitiesSection from "@/components/homepage/FacilitiesSection";
 import OrderBanner from "@/components/homepage/OrderBanner";
 import RentalSection from "@/components/homepage/RentalSection";
+import ReservationSection from "@/components/homepage/ReservationSection";
 import TestimonialSection from "@/components/homepage/TestimonialSection";
 
 export default function Home() {
@@ -32,6 +33,8 @@ export default function Home() {
       />
 
       <TestimonialSection />
+
+      <ReservationSection />
     </>
   );
 }

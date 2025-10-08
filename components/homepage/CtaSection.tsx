@@ -29,24 +29,22 @@ const CtaSection: FC<CtaSectionProps> = ({ className, title }) => {
       <Headline className="text-5xl text-background mb-14">{title}</Headline>
 
       <div className="flex gap-5 justify-center">
-        <Link href="tel:+123456789">
-          <Button
-            size={"2xl"}
-            className="rounded-full hover:bg-background hover:text-foreground"
-          >
-            Call us
-          </Button>
-        </Link>
+        <Button
+          asChild
+          size={"2xl"}
+          className="rounded-full hover:bg-background hover:text-foreground"
+        >
+          <Link href="tel:+123456789">Call us</Link>
+        </Button>
 
-        <Link href="#">
-          <Button
-            variant={"outline"}
-            size={"2xl"}
-            className="rounded-full hover:bg-background hover:text-foreground"
-          >
-            Reservation
-          </Button>
-        </Link>
+        <Button
+          asChild
+          variant={"outline"}
+          size={"2xl"}
+          className="rounded-full hover:bg-background hover:text-foreground"
+        >
+          <Link href="#">Reservation</Link>
+        </Button>
       </div>
     </section>
   );

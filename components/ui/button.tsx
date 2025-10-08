@@ -27,6 +27,7 @@ const buttonVariants = cva(
         xl: "h-[46px] px-8 has-[>svg]:px-6",
         "2xl": "h-[55px] px-8 has-[>svg]:px-6",
         icon: "size-9",
+        clean: "",
       },
     },
     defaultVariants: {

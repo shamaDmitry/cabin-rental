@@ -26,7 +26,7 @@ const CafeSection: FC<CafeSection> = ({
       <div
         className="absolute size-full left-0 top-0 -z-10 bg-no-repeat bg-[43%_13%] bg-cover"
         style={{
-          background: `url(${imageSrc})`,
+          backgroundImage: `url(${imageSrc})`,
         }}
       />
 
