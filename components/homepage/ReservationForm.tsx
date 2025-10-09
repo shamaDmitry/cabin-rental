@@ -17,7 +17,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { SelectIcon } from "@radix-ui/react-select";
 
 const ReservationForm = () => {
   const [dateIn, setDateIn] = useState<Date>();
@@ -89,9 +88,13 @@ const ReservationForm = () => {
             </SelectTrigger>
 
             <SelectContent>
-              <SelectItem value="1">1</SelectItem>
-              <SelectItem value="2">2</SelectItem>
-              <SelectItem value="3">3</SelectItem>
+              {["1", "2", "3", "4", "5", "5+"].map((item) => {
+                return (
+                  <SelectItem key={item} value={item}>
+                    {item}
+                  </SelectItem>
+                );
+              })}
             </SelectContent>
           </Select>
         </div>

@@ -41,7 +41,7 @@ const CtaSection: FC<CtaSectionProps> = ({ className, title }) => {
           asChild
           variant={"outline"}
           size={"2xl"}
-          className="rounded-full hover:bg-background hover:text-foreground"
+          className="rounded-full hover:bg-background hover:text-foreground text-background"
         >
           <Link href="#">Reservation</Link>
         </Button>

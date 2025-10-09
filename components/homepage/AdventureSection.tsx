@@ -17,12 +17,12 @@ const AdventureSection: FC<AdventureSectionProps> = ({ className }) => {
           "url('https://cabin-rental.weblium.site/res/5ce40621b84b1a002410eb9e/5d00dd1ebd7a91002452e0b6?nowebp') 10.31% 73.54% / cover no-repeat, rgb(243, 243, 242)",
       }}
     >
-      <Container className="py-12">
+      <Container className="">
         <Headline as="h2" className="mb-5">
           Your Adventure Starts Here
         </Headline>
 
-        <p className="max-w-4xl mx-auto mb-5">
+        <p className="max-5xl mx-auto mb-8 text-lg text-foreground/60">
           Welcome to a perfect escape in Yosemite Mariposa County, California!
           Yosemite National Park is known for its giant sequoias and the
           observation deck of the Portal View, which overlooks the Briddlevale

@@ -10,10 +10,14 @@ const menu = [
 
 const Navigation = () => {
   return (
-    <nav className="flex gap-4 justify-center ">
+    <nav className="flex gap-4 justify-center pt-2.5 pb-8">
       {menu.map((item) => {
         return (
-          <Link href={item.path} key={item.id} className="my-1.5 mx-5">
+          <Link
+            href={item.path}
+            key={item.id}
+            className="my-1.5 mx-5 font-semibold hover:text-primary"
+          >
             {item.name}
           </Link>
         );

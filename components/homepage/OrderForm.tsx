@@ -4,24 +4,28 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { FC } from "react";
 
-interface OrderFormProps {
+interface OrderCallFormProps {
   className?: string;
 }
 
-const OrderForm: FC<OrderFormProps> = ({ className }) => {
+const OrderCallForm: FC<OrderCallFormProps> = ({ className }) => {
   return (
     <form className={className}>
-      <div>
-        <Input className="" placeholder="Name" />
+      <div className="flex flex-col gap-6 mb-14">
+        <div>
+          <Input className="" placeholder="Name" />
+        </div>
+
+        <div>
+          <Input placeholder="Phone number" className="" />
+        </div>
       </div>
 
-      <div>
-        <Input placeholder="Phone number" className="" />
-      </div>
-
-      <Button>Order a call</Button>
+      <Button className="w-full rounded-full" size="xl">
+        Order a call
+      </Button>
     </form>
   );
 };
 
-export default OrderForm;
+export default OrderCallForm;

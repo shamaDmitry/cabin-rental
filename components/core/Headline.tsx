@@ -22,7 +22,7 @@
 
 import React from "react";
 
-type Level = 1 | 2 | 3 | 4 | 5 | 6;
+export type Level = 1 | 2 | 3 | 4 | 5 | 6;
 
 interface HeadlineProps extends React.HTMLAttributes<HTMLHeadingElement> {
   level?: Level;

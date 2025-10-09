@@ -1,5 +1,5 @@
 import Container from "@/components/core/Container";
-import Headline from "@/components/core/Headline";
+import Headline, { Level } from "@/components/core/Headline";
 import { Button } from "@/components/ui/button";
 import { ArrowBigDown } from "lucide-react";
 import { v4 as uuidv4 } from "uuid";
@@ -65,7 +65,11 @@ const DsPage = () => {
         {Array(6)
           .fill(0)
           .map((_, i) => (
-            <Headline level={i + 1} key={i}>
+            <Headline
+              as={`h${i + 1}` as "h1" | "h2" | "h3" | "h4" | "h5" | "h6"}
+              level={(i + 1) as Level}
+              key={i}
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </Headline>
           ))}

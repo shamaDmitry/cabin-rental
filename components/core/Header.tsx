@@ -26,9 +26,9 @@ const Header = () => {
               </Link>
             </div>
 
-            <div className="mx-4 w-1/5 flex flex-col items-end">
+            <div className="mx-4 w-1/5 flex flex-col items-end text-primary">
               <Link href="tel:+12345678900">+1 (234) 567 89 00</Link>
-              <Link href="tel:+12345678900">+1 (234) 567 89 01</Link>
+              <Link href="tel:+12345678901">+1 (234) 567 89 01</Link>
             </div>
           </div>
         </div>

@@ -19,7 +19,7 @@ const RentalCard: React.FC<RentalCardProps> = ({
   href,
 }) => {
   return (
-    <Card className="overflow-hidden rounded-md relative border-0 shadow">
+    <Card className="overflow-hidden rounded-md relative border-0 shadow py-[70px] px-9">
       <div className="absolute size-full left-0 top-0">
         <div
           className="absolute left-0 right-0 top-0 bottom-0"
@@ -31,8 +31,8 @@ const RentalCard: React.FC<RentalCardProps> = ({
         <div className="absolute left-0 right-0 top-0 bottom-0 bg-black/50"></div>
       </div>
 
-      <CardContent className="flex flex-col items-center relative text-card">
-        <div className="text-4xl mb-4">{price}</div>
+      <CardContent className="flex flex-col items-center relative text-card p-0">
+        <div className="text-4xl mb-4 font-bold">{price}</div>
 
         <Headline as="h3" className="mb-4">
           {title}
@@ -40,11 +40,13 @@ const RentalCard: React.FC<RentalCardProps> = ({
 
         <p>{description}</p>
 
-        <Link href={href}>
-          <Button className="rounded-full hover:bg-card hover:text-foreground mt-12">
-            Learn more
-          </Button>
-        </Link>
+        <Button
+          asChild
+          size="xl"
+          className="rounded-full hover:bg-card hover:text-foreground mt-12"
+        >
+          <Link href={href}>Learn more</Link>
+        </Button>
       </CardContent>
     </Card>
   );
