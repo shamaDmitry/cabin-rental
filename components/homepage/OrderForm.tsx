@@ -2,13 +2,26 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { FC } from "react";
+import { FC, useEffect } from "react";
 
 interface OrderCallFormProps {
   className?: string;
 }
 
 const OrderCallForm: FC<OrderCallFormProps> = ({ className }) => {
+  const fetchData = async () => {
+    const res = await fetch("/api/my-route");
+    const data = await res.json();
+
+    console.log("data", data);
+  };
+
+  useEffect(() => {
+    fetchData();
+
+    return () => {};
+  }, []);
+
   return (
     <form className={className}>
       <div className="flex flex-col gap-6 mb-14">
