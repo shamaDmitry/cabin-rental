@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [new URL("https://cabin-rental.weblium.site/**")],
   },
+  turbopack: {},
 };
 
 export default withPayload(nextConfig);
