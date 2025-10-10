@@ -2,25 +2,25 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { FC, useEffect } from "react";
+import { FC } from "react";
 
 interface OrderCallFormProps {
   className?: string;
 }
 
 const OrderCallForm: FC<OrderCallFormProps> = ({ className }) => {
-  const fetchData = async () => {
-    const res = await fetch("/api/my-route");
-    const data = await res.json();
+  // const fetchData = async () => {
+  //   const res = await fetch("/api/my-route");
+  //   const data = await res.json();
 
-    console.log("data", data);
-  };
+  //   console.log("data", data);
+  // };
 
-  useEffect(() => {
-    fetchData();
+  // useEffect(() => {
+  //   fetchData();
 
-    return () => {};
-  }, []);
+  //   return () => {};
+  // }, []);
 
   return (
     <form className={className}>

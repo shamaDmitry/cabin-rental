@@ -8,7 +8,7 @@ import RentalSection from "@/components/homepage/RentalSection";
 import ReservationSection from "@/components/homepage/ReservationSection";
 import TestimonialSection from "@/components/homepage/TestimonialSection";
 
-export default function Home() {
+export default async function Home() {
   return (
     <>
       <OrderBanner />
