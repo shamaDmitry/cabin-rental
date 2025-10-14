@@ -3,8 +3,7 @@
 import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import NextJsImage from "./NextJsImage";
-import { Button } from "../ui/button";
+import NextJsImage from "@/components/gallery/NextJsImage";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
@@ -12,26 +11,38 @@ import Zoom from "yet-another-react-lightbox/plugins/zoom";
 const slides = [
   {
     src: "https://cabin-rental.weblium.site/res/5ce40621b84b1a002410eb9e/5d00bae8378c090023b109b8_optimized_1396.webp",
+    width: 1396,
+    height: 900,
   },
   {
     src: "https://cabin-rental.weblium.site/res/5ce40621b84b1a002410eb9e/5d00bc3acadfda00238d98ca_optimized_1442.webp",
+    width: 1442,
+    height: 900,
   },
   {
     src: "https://cabin-rental.weblium.site/res/5ce40621b84b1a002410eb9e/5d00bdef032b4e0023acf635_optimized_1396.webp",
+    width: 1396,
+    height: 900,
   },
   {
     src: "https://cabin-rental.weblium.site/res/5ce40621b84b1a002410eb9e/5d00baa2378c090023b10996_optimized_1396.webp",
+    width: 1396,
+    height: 900,
   },
   {
     src: "https://cabin-rental.weblium.site/res/5ce40621b84b1a002410eb9e/5d00bf21f7675700234bf892_optimized_950.webp",
+    width: 950,
+    height: 900,
   },
   {
     src: "https://cabin-rental.weblium.site/res/5ce40621b84b1a002410eb9e/5d00bb7bf7675700234bf1cc_optimized_1396.webp",
+    width: 1396,
+    height: 900,
   },
 ];
 
 const GalleryLightbox = () => {
-  const [open, setOpen] = useState(false);
+  const [, setOpen] = useState(false);
   const [index, setIndex] = useState(-1);
 
   return (
