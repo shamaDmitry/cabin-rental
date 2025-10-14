@@ -52,13 +52,13 @@ const AboutPage = () => {
       >
         <Container className="text-center text-background">
           <p className="mb-12">
-            We have a children's playground with a number of swings and slides.
-            Our spacious terrain is for you to relax in the outdoors. You don't
-            need to take food with you, as we offer a shop with the freshest
-            local produce including bakery and butchery. Our cafe is open 7 days
-            a week from 9:30 for our famous free breakfasts, and a diverse menu
-            of lunches. Additionally, we offer a variety of cabins for you to
-            choose from. Here are some of them:
+            We have a children&apos;s playground with a number of swings and
+            slides. Our spacious terrain is for you to relax in the outdoors.
+            You don&apos;t need to take food with you, as we offer a shop with
+            the freshest local produce including bakery and butchery. Our cafe
+            is open 7 days a week from 9:30 for our famous free breakfasts, and
+            a diverse menu of lunches. Additionally, we offer a variety of
+            cabins for you to choose from. Here are some of them:
           </p>
 
           <div className="grid grid-cols-3 gap-8">
@@ -206,7 +206,7 @@ const AboutPage = () => {
 
       <section className="py-20 relative">
         <div
-          className="absolute size-full bg-cover left-0 top-0 -z-10 bg-fixed filter contrast-[160%]"
+          className="absolute size-full bg-cover left-0 top-0 -z-10 bg-fixed filter contrast-[160%] bg-center"
           style={{
             backgroundImage: `url("https://cabin-rental.weblium.site/res/5ce40621b84b1a002410eb9e/5cfe6b435da05700239a0c2b?nowebp")`,
           }}

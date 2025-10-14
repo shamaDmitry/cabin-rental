@@ -2,8 +2,8 @@ import { FC } from "react";
 import Headline from "@/components/core/Headline";
 import RentalCard from "@/components/homepage/RentalCard";
 import Link from "next/link";
-import { Button } from "../ui/button";
-import Container from "../core/Container";
+import { Button } from "@/components/ui/button";
+import Container from "@/components/core/Container";
 import { cn } from "@/lib/utils";
 
 interface RentalSection {
