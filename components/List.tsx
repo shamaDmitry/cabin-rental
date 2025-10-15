@@ -1,13 +1,15 @@
+import { cn } from "@/lib/utils";
 import { Check } from "lucide-react";
 import { FC } from "react";
 
 interface ListProps {
   data: { id: string | number; content: string }[];
+  className?: string;
 }
 
-const List: FC<ListProps> = ({ data }) => {
+const List: FC<ListProps> = ({ data, className }) => {
   return (
-    <ul className="flex flex-col gap-4">
+    <ul className={cn("flex flex-col gap-4", className)}>
       {data.map((item) => {
         return (
           <li key={item.id} className="flex items-center gap-5">

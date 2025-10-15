@@ -103,7 +103,7 @@ const GuestSlider = () => {
         {slides.map((slide) => {
           return (
             <div
-              className="aspect-square relative flex items-center justify-center"
+              className="aspect-square relative flex items-center justify-center outline-0"
               key={slide.id}
             >
               <Image
