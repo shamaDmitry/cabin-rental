@@ -115,7 +115,7 @@ const AccommodationsPage = () => {
         />
 
         <Container>
-          <Card className="text-center max-w-xl mx-auto p-0">
+          <Card className="bg-white/70 backdrop-blur-lg border border-white/20 shadow-xl text-center max-w-xl mx-auto p-0">
             <CardContent className="py-12 px-16">
               <Headline level={2} className="font-bold mb-8">
                 Choose the best one

@@ -89,7 +89,7 @@ const Footer = ({ className }: FooterProps) => {
                   <Link
                     key={item.id}
                     href={item.href}
-                    className="whitespace-nowrap"
+                    className="whitespace-nowrap hover:text-primary"
                   >
                     {item.label}
                   </Link>

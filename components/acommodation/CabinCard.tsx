@@ -14,12 +14,18 @@ export interface Cabin {
 }
 
 const CabinCard = ({ data }: { data: Cabin }) => {
-  const { amenities, details, id, imageUrl, name, price } = data;
+  const { amenities, details, imageUrl, name, price } = data;
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
       <div className="rounded-lg overflow-hidden">
-        <Image src={imageUrl} alt={name} width={670} height={435} />
+        <Image
+          className="size-full object-cover"
+          src={imageUrl}
+          alt={name}
+          width={670}
+          height={435}
+        />
       </div>
 
       <div>
