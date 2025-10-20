@@ -19,7 +19,7 @@ const menu = [
   },
   {
     id: uuidv4(),
-    href: "/photos",
+    href: "/gallery",
     label: "Photos",
   },
   {

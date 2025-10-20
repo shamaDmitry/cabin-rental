@@ -31,7 +31,7 @@ const ContactGallery: FC<ContactGalleryProps> = ({ images }) => {
           return (
             <Image
               key={item.id}
-              className="object-cover max-h-[250px] rounded-lg"
+              className="object-cover max-h-[250px] rounded-lg h-full"
               src={item.src}
               alt={item.alt}
               width={item.width}
